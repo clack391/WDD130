@@ -1,13 +1,9 @@
-/* Google Font API Preconnect */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-
 /* Define root-level CSS variables for colors */
 :root {
     --primary-color: #3498db;
     --secondary-color: #2ecc71;
     --text-color: #e74c3c;
-    --bg-color: #f39c12;
+    --bg-color: #f39c13;
 }
 
 /* Apply general styles */
