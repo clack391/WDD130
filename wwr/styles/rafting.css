@@ -14,7 +14,7 @@ body {
     color: var(--text-color);
     margin: 0;
     padding: 0;
-    text-align: center; /* Center all text by default */
+    text-align: right; /* Center all text by default */
 }
 
 /* Header styles */
@@ -24,7 +24,7 @@ header {
     align-items: center;
     padding: 1rem;
     background-color: var(--primary-color);
-    text-align: center; /* Ensure header text is centered */
+    text-align: right; /* Ensure header text is centered */
 }
 
 header img {
@@ -34,7 +34,7 @@ header img {
 
 header nav {
     width: 100%; /* Ensure nav links are centered */
-    text-align: center;
+    text-align: right;
 }
 
 header nav a {
