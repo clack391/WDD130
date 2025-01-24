@@ -1,122 +1,116 @@
-/* Root Variables */
+/* Define root-level CSS variables for colors */
 :root {
-    --primary-color: #d7c7f5; /* Light purple */
-    --secondary-color: #6c4fa3; /* Darker purple for accents */
-    --text-color: #000000; /* Black for text */
-    --bg-color: #ffffff; /* White background */
+    --primary-color: #0066cc; /* Match logo's blue color */
+    --secondary-color: #ff6600; /* Accent color for headings */
+    --text-color: #333333; /* Default text color */
+    --bg-color: #ffffff; /* Background color */
+    --footer-bg-color: #f1f1f1; /* Footer background */
 }
 
-/* Reset and General Styles */
-body, h1, h2, p, ul, li, a {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General styles */
 body {
     font-family: 'Arial', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-/* Header Styles */
+/* Header styles */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: var(--primary-color);
-    border-bottom: 2px solid var(--secondary-color);
+    color: #ffffff;
 }
 
 header img {
-    height: 60px;
-}
-
-header nav {
-    display: flex;
-    gap: 15px;
+    height: 50px;
 }
 
 header nav a {
+    color: #ffffff;
     text-decoration: none;
-    color: var(--text-color);
-    font-size: 1rem;
+    margin: 0 15px;
     font-weight: bold;
 }
 
 header nav a:hover {
-    color: var(--secondary-color);
+    text-decoration: underline;
 }
 
-/* Hero Section */
+/* Hero section */
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 40px 20px;
-    background-color: var(--primary-color);
-    border-bottom: 2px solid var(--secondary-color);
+    position: relative;
     text-align: center;
+    color: #ffffff;
+    background: url('hero-image.jpg') center/cover no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero h1 {
     font-size: 2.5rem;
-    color: var(--text-color);
-    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.hero p {
-    max-width: 600px;
-    background: var(--bg-color);
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: var(--text-color);
-    line-height: 1.5;
-}
-
-.hero img {
-    margin-top: 20px;
-    width: 150px;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Sections */
+/* History and adventure sections */
 section {
+    margin: 20px;
     padding: 20px;
-    text-align: center;
-    border-bottom: 2px solid var(--secondary-color);
+    background-color: var(--bg-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 section h2 {
-    font-size: 1.8rem;
     color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 5px;
     margin-bottom: 15px;
 }
 
-/* Footer */
-footer {
-    background-color: var(--primary-color);
-    text-align: center;
-    padding: 15px 20px;
-    border-top: 2px solid var(--secondary-color);
+section p {
+    margin-bottom: 15px;
 }
 
-footer p {
+section img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+section .adventure-item {
+    margin-bottom: 30px;
+}
+
+section .adventure-item h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--footer-bg-color);
+    padding: 15px 0;
+    text-align: center;
     font-size: 0.9rem;
-    margin-bottom: 10px;
+    color: #666666;
 }
 
 footer a {
-    display: inline-block;
     margin: 0 10px;
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 footer a img {
     width: 30px;
-    height: auto;
     vertical-align: middle;
 }
