@@ -58,7 +58,7 @@ header nav a:hover {
 
 .hero img {
     width: 90%;
-    height: auto%;
+    height: auto;
     object-fit: cover;
 }
 
