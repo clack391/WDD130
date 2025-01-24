@@ -1,10 +1,9 @@
 /* Define root-level CSS variables for colors */
 :root {
-    --primary-color: #0066cc; /* Match logo's blue color */
-    --secondary-color: #ff6600; /* Accent color for headings */
-    --text-color: #333333; /* Default text color */
+    --primary-color: #0066cc; /* Blue color from the logo */
+    --secondary-color: #ff6600; /* Orange accent color */
+    --text-color: #333333; /* Dark text color */
     --bg-color: #ffffff; /* Background color */
-    --footer-bg-color: #f1f1f1; /* Footer background */
 }
 
 /* General styles */
@@ -24,17 +23,22 @@ header {
     align-items: center;
     padding: 10px 20px;
     background-color: var(--primary-color);
-    color: #ffffff;
 }
 
 header img {
-    height: 50px;
+    height: 60px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
 }
 
 header nav a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
     margin: 0 15px;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -45,59 +49,76 @@ header nav a:hover {
 /* Hero section */
 .hero {
     position: relative;
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 350px;
     text-align: center;
-    color: #ffffff;
-    background: url('hero-image.jpg') center/cover no-repeat;
-    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 2.8rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    margin: 0;
 }
 
-/* History and adventure sections */
-section {
-    margin: 20px;
-    padding: 20px;
-    background-color: var(--bg-color);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+.hero p {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
 }
 
-section h2 {
+/* History section */
+section.history {
+    margin: 20px auto;
+    width: 80%;
+}
+
+section.history h2 {
     color: var(--secondary-color);
+    font-size: 1.5rem;
     border-bottom: 2px solid var(--secondary-color);
     padding-bottom: 5px;
-    margin-bottom: 15px;
 }
 
-section p {
-    margin-bottom: 15px;
+section.history p {
+    margin: 15px 0;
 }
 
-section img {
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 15px;
+/* Adventure section */
+section.adventure {
+    margin: 20px auto;
+    width: 80%;
 }
 
-section .adventure-item {
+.adventure .adventure-item {
     margin-bottom: 30px;
 }
 
-section .adventure-item h3 {
-    margin: 10px 0;
-    font-size: 1.2rem;
-    color: var(--primary-color);
+.adventure .adventure-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
-/* Footer styles */
+.adventure .adventure-item h3 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.adventure .adventure-item p {
+    margin: 0;
+    font-size: 1rem;
+    color: #666666;
+}
+
+/* Footer */
 footer {
-    background-color: var(--footer-bg-color);
+    background-color: #f2f2f2;
     padding: 15px 0;
     text-align: center;
     font-size: 0.9rem;
@@ -105,12 +126,14 @@ footer {
 }
 
 footer a {
-    margin: 0 10px;
-    text-decoration: none;
     color: var(--primary-color);
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
 }
 
 footer a img {
     width: 30px;
     vertical-align: middle;
+    margin: 5px;
 }
