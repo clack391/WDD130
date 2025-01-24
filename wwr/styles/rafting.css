@@ -78,22 +78,27 @@ section {
 
 section h2 {
     color: var(--secondary-color);
-    margin-bottom: 15px;
     border-bottom: 2px solid var(--secondary-color);
-    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
-.adventure-item {
-    margin: 20px 0;
+section p {
+    margin-bottom: 15px;
 }
 
-.adventure-item img {
+section img {
     width: 100%;
     border-radius: 5px;
+    margin-bottom: 15px;
 }
 
-.adventure-item h3 {
-    margin-top: 10px;
+section .adventure-item {
+    margin-bottom: 30px;
+}
+
+section .adventure-item h3 {
+    margin: 10px 0;
     font-size: 1.2rem;
     color: var(--primary-color);
 }
