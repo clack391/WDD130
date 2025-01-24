@@ -1,22 +1,13 @@
-/* Root Variables */
-:root {
-    --primary-color: #0066cc;
-    --secondary-color: #ff6600;
-    --text-color: #333333;
-    --bg-color: #ffffff;
-    --footer-bg-color: #f1f1f1;
-}
-
-/* Apply general styles */
+/* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     margin: 0;
     padding: 0;
 }
 
-/* Header styles */
+/* Header Styles */
 header {
     display: flex;
     justify-content: space-between;
@@ -27,6 +18,10 @@ header {
 
 header img {
     width: 150px;
+}
+
+header nav {
+    display: flex;
 }
 
 header nav a {
@@ -40,7 +35,7 @@ header nav a:hover {
     text-decoration: underline;
 }
 
-/* Hero section styling */
+/* Hero Section */
 .hero {
     position: relative;
     width: 100%;
@@ -61,6 +56,27 @@ header nav a:hover {
     color: white;
     font-size: 3rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero .description {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 80%;
+    text-align: center;
+}
+
+.hero .description img {
+    width: 80px;
+    height: auto;
+    margin-left: 1rem;
+    border-radius: 4px;
+    vertical-align: middle;
 }
 
 /* History and adventure sections */
