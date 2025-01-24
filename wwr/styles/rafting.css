@@ -1,9 +1,9 @@
 /* Define root-level CSS variables for colors */
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
-    --text-color: #FFFFFF;
-    --bg-color: #f39c13;
+    --primary-color: #b19cd9; /* Soft purple */
+    --secondary-color: #FFFFFF;
+    --text-color: #000000;
+    --bg-color: #f5f5f5;
 }
 
 /* Apply general styles */
@@ -22,17 +22,23 @@ header {
     align-items: center;
     padding: 1rem;
     background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 header img {
-    width: 150px;
+    width: 100px;
+}
+
+header nav {
+    display: flex;
+    gap: 1.5rem;
 }
 
 header nav a {
-    color: white;
+    color: var(--secondary-color);
     text-decoration: none;
-    margin: 0 1rem;
     font-weight: bold;
+    font-size: 1rem;
 }
 
 header nav a:hover {
@@ -41,78 +47,97 @@ header nav a:hover {
 
 /* Hero section styling */
 .hero {
-    position: relative;
-    width: 100%;
-    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hero img {
     width: 100%;
-    height: 100%;
+    max-height: 300px;
     object-fit: cover;
+    margin-bottom: 1rem;
 }
 
 .hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color: var(--primary-color);
 }
 
 /* Article section styling */
 article {
     display: flex;
     align-items: center;
-    margin: 2rem 0;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 article img {
-    width: 150px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
     border-radius: 50%;
-    margin-right: 2rem;
 }
 
 article p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.6;
+    max-width: 600px;
 }
 
 /* Section styling */
 section {
     margin: 2rem 0;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--secondary-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
+    font-size: 2rem;
     color: var(--primary-color);
+    margin-bottom: 1rem;
 }
 
 section img {
     width: 100%;
+    max-width: 300px;
     height: auto;
-    margin-bottom: 1rem;
+    margin: 1rem;
+    border: 2px solid var(--primary-color);
 }
 
 /* Footer styles */
 footer {
-    text-align: center;
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1.5rem;
+    gap: 1rem;
 }
 
 footer p {
     margin: 0;
 }
 
-footer a {
-    text-decoration: none;
-    margin: 0 10px;
+footer nav {
+    display: flex;
+    gap: 1rem;
 }
 
-footer a img {
-    width: 40px;
-    margin: 10px;
+footer nav a img {
+    width: 30px;
+    height: 30px;
 }
