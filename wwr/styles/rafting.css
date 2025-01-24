@@ -1,18 +1,20 @@
 /* Define root-level CSS variables for colors */
 :root {
-    --primary-color: #b19cd9; /* Soft purple */
-    --secondary-color: #FFFFFF;
-    --text-color: #000000;
-    --bg-color: #f5f5f5;
+    --primary-color: #0066cc; /* Match logo's blue color */
+    --secondary-color: #ff6600; /* Accent color for headings */
+    --text-color: #333333; /* Default text color */
+    --bg-color: #ffffff; /* Background color */
+    --footer-bg-color: #f1f1f1; /* Footer background */
 }
 
-/* Apply general styles */
+/* General styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 /* Header styles */
@@ -20,124 +22,95 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 10px 20px;
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: #ffffff;
 }
 
 header img {
-    width: 100px;
-}
-
-header nav {
-    display: flex;
-    gap: 1.5rem;
+    height: 50px;
 }
 
 header nav a {
-    color: var(--secondary-color);
+    color: #ffffff;
     text-decoration: none;
+    margin: 0 15px;
     font-weight: bold;
-    font-size: 1rem;
 }
 
 header nav a:hover {
     text-decoration: underline;
 }
 
-/* Hero section styling */
+/* Hero section */
 .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
     text-align: center;
-    padding: 2rem;
-    background-color: var(--secondary-color);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.hero img {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    margin-bottom: 1rem;
+    color: #ffffff;
+    background: url('hero-image.jpg') center/cover no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero h1 {
     font-size: 2.5rem;
-    margin: 1rem 0;
-    color: var(--primary-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Article section styling */
-article {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 2rem;
-    background-color: var(--secondary-color);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-article img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-article p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    max-width: 600px;
-}
-
-/* Section styling */
+/* History and adventure sections */
 section {
-    margin: 2rem 0;
-    padding: 2rem;
-    text-align: center;
-    background-color: var(--secondary-color);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--bg-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 section h2 {
-    font-size: 2rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+section p {
+    margin-bottom: 15px;
 }
 
 section img {
     width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin: 1rem;
-    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+section .adventure-item {
+    margin-bottom: 30px;
+}
+
+section .adventure-item h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: var(--primary-color);
 }
 
 /* Footer styles */
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    padding: 1.5rem;
-    gap: 1rem;
+    background-color: var(--footer-bg-color);
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666666;
 }
 
-footer p {
-    margin: 0;
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
-footer nav {
-    display: flex;
-    gap: 1rem;
-}
-
-footer nav a img {
+footer a img {
     width: 30px;
-    height: 30px;
+    vertical-align: middle;
 }
