@@ -1,28 +1,32 @@
-/* Define root-level CSS variables for colors */
+/* Root Variables */
 :root {
-    --primary-color: #0066cc; /* Blue color from the logo */
-    --secondary-color: #ff6600; /* Orange accent color */
-    --text-color: #333333; /* Dark text color */
-    --bg-color: #ffffff; /* Background color */
+    --primary-color: #d7c7f5; /* Light purple */
+    --secondary-color: #6c4fa3; /* Darker purple for accents */
+    --text-color: #000000; /* Black for text */
+    --bg-color: #ffffff; /* White background */
 }
 
-/* General styles */
+/* Reset and General Styles */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
 }
 
-/* Header styles */
+/* Header Styles */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 header img {
@@ -31,109 +35,88 @@ header img {
 
 header nav {
     display: flex;
-    align-items: center;
+    gap: 15px;
 }
 
 header nav a {
-    color: white;
     text-decoration: none;
-    margin: 0 15px;
+    color: var(--text-color);
     font-size: 1rem;
     font-weight: bold;
 }
 
 header nav a:hover {
-    text-decoration: underline;
+    color: var(--secondary-color);
 }
 
-/* Hero section */
+/* Hero Section */
 .hero {
-    position: relative;
-    background: url('hero-image.jpg') no-repeat center center/cover;
-    height: 350px;
-    text-align: center;
     display: flex;
-    align-items: center;
     justify-content: center;
-    color: white;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+    background-color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    text-align: center;
 }
 
 .hero h1 {
-    font-size: 2.8rem;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
-    margin: 0;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
 }
 
 .hero p {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    margin-top: 10px;
+    max-width: 600px;
+    background: var(--bg-color);
+    padding: 15px;
     border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
+    line-height: 1.5;
 }
 
-/* History section */
-section.history {
-    margin: 20px auto;
-    width: 80%;
+.hero img {
+    margin-top: 20px;
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
 }
 
-section.history h2 {
-    color: var(--secondary-color);
-    font-size: 1.5rem;
+/* Sections */
+section {
+    padding: 20px;
+    text-align: center;
     border-bottom: 2px solid var(--secondary-color);
-    padding-bottom: 5px;
 }
 
-section.history p {
-    margin: 15px 0;
-}
-
-/* Adventure section */
-section.adventure {
-    margin: 20px auto;
-    width: 80%;
-}
-
-.adventure .adventure-item {
-    margin-bottom: 30px;
-}
-
-.adventure .adventure-item img {
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.adventure .adventure-item h3 {
-    font-size: 1.2rem;
-    color: var(--primary-color);
-    margin-bottom: 5px;
-}
-
-.adventure .adventure-item p {
-    margin: 0;
-    font-size: 1rem;
-    color: #666666;
+section h2 {
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
 }
 
 /* Footer */
 footer {
-    background-color: #f2f2f2;
-    padding: 15px 0;
+    background-color: var(--primary-color);
     text-align: center;
+    padding: 15px 20px;
+    border-top: 2px solid var(--secondary-color);
+}
+
+footer p {
     font-size: 0.9rem;
-    color: #666666;
+    margin-bottom: 10px;
 }
 
 footer a {
-    color: var(--primary-color);
-    text-decoration: none;
-    margin: 0 10px;
     display: inline-block;
+    margin: 0 10px;
 }
 
 footer a img {
     width: 30px;
+    height: auto;
     vertical-align: middle;
-    margin: 5px;
 }
