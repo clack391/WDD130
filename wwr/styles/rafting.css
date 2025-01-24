@@ -44,50 +44,55 @@ header nav a:hover {
 
 /* Hero section */
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 40px 20px;
-    background-color: var(--primary-color);
-    border-bottom: 2px solid var(--secondary-color);
+    position: relative;
     text-align: center;
+    color: #ffffff;
+    background: url('hero-image.jpg') center/cover no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero h1 {
     font-size: 2.5rem;
-    color: var(--text-color);
-    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.hero p {
-    max-width: 600px;
-    background: var(--bg-color);
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: var(--text-color);
-    line-height: 1.5;
-}
-
-.hero img {
-    margin-top: 20px;
-    width: 150px;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Sections */
+/* History and adventure sections */
 section {
+    margin: 20px;
     padding: 20px;
-    text-align: center;
-    border-bottom: 2px solid var(--secondary-color);
+    background-color: var(--bg-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 section h2 {
-    font-size: 1.8rem;
     color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 5px;
     margin-bottom: 15px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+section img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+section .adventure-item {
+    margin-bottom: 30px;
+}
+
+section .adventure-item h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: var(--primary-color);
 }
 
 /* Footer styles */
