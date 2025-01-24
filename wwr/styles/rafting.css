@@ -56,33 +56,25 @@ header nav a:hover {
 
 .hero h1 {
     font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: var(--text-color);
+    margin-bottom: 20px;
 }
 
-/* History and adventure sections */
-section {
-    margin: 20px;
-    padding: 20px;
-    background-color: var(--bg-color);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-section h2 {
-    color: var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-}
-
-section p {
-    margin-bottom: 15px;
-}
-
-section img {
-    width: 100%;
+.hero p {
+    max-width: 600px;
+    background: var(--bg-color);
+    padding: 15px;
     border-radius: 5px;
-    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+.hero img {
+    margin-top: 20px;
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
 }
 
 section .adventure-item {
