@@ -22,13 +22,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     background-color: var(--primary-color);
     text-align: right; /* Ensure header text is centered */
 }
 
 header img {
-    width: 150px;
+    width: 120px;
     margin: 0 auto; /* Center logo horizontally */
 }
 
@@ -40,7 +40,7 @@ header nav {
 header nav a {
     color: white;
     text-decoration: none;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     font-weight: bold;
 }
 
