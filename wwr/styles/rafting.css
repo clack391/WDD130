@@ -61,18 +61,17 @@ header nav a:hover {
 
 .hero h1 {
     position: absolute;
-    top: -2%;
+    top: 20%;
     left: 50%;
-    transform: translate(-50%, -10%);
+    transform: translate(-50%, -50%);
     color: #ff6600;
     font-size: 2rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
     padding: 10px 20px;
     border: 3px solid white;
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 0%;
+    border-radius: 5px;
 }
-
 
 /* History and adventure sections */
 section {
@@ -122,4 +121,34 @@ footer a {
 
 footer a img {
     width: 40px;
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.5rem;
+        padding: 8px 16px;
+        top: 30%; /* Adjusted for better visibility */
+    }
+
+    section img {
+        width: 90%; /* Adjust image width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.2rem;
+        padding: 5px 10px;
+        top: 35%;
+    }
+
+    header img {
+        width: 50px; /* Reduce logo size on smaller screens */
+    }
+
+    header nav a {
+        margin: 0 0.2rem;
+        font-size: 0.9rem;
+    }
 }
