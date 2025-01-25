@@ -61,7 +61,7 @@ header nav a:hover {
 }
 
 .hero h1 {
-    position: center;
+    position: absolute;
     top: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
