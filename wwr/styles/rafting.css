@@ -22,7 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 2.5rem;
+    padding: 1.5rem 2.0rem;
     background-color: var(--primary-color);
     text-align: right;
 }
@@ -67,7 +67,7 @@ header nav a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--secondary-color); /* Changed color to orange */
-    font-size: 3rem;
+    font-size: 10rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
