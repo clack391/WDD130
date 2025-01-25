@@ -21,9 +21,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 2.0rem;
+    padding: 1.5rem 2rem; /* Fixed spacing for consistency */
     background-color: var(--primary-color);
-    text-align: right;
 }
 
 header img {
@@ -32,7 +31,6 @@ header img {
 
 header nav {
     width: 100%;
-    text-align: right;
 }
 
 header nav a {
@@ -61,22 +59,22 @@ header nav a:hover {
 
 .hero h1 {
     position: absolute;
-    top: -2%;
+    top: 10%; /* Adjusted for better placement */
     left: 50%;
-    transform: translate(-50%, -10%);
+    transform: translate(-50%, -50%);
     color: #ff6600;
     font-size: 2rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
     padding: 10px 20px;
-    
+    border: 3px solid white;
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 5x;
+    border-radius: 5px; /* Fixed typo (was 5x) */
 }
-
 
 /* History and adventure sections */
 section {
     text-align: center;
+    padding: 20px; /* Added padding for better spacing */
 }
 
 section h2 {
@@ -92,7 +90,7 @@ section p {
 
 section img {
     width: 80%;
-    border-radius: 0px;
+    border-radius: 0; /* Simplified property */
     margin-bottom: 15px;
 }
 
@@ -117,7 +115,6 @@ footer {
 footer a {
     margin: 0 10px;
     display: inline-block;
-    text-align: center;
 }
 
 footer a img {
