@@ -60,7 +60,7 @@ header nav a:hover {
 }
 
 .hero h1 {
-    position: left;
+    position: middle;
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
