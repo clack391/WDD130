@@ -11,7 +11,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--bg-color);
-    color: var(--text-color);
+    color: var(--secondary-color);
     margin: 0;
     padding: 0;
     text-align: right;
