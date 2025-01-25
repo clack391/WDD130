@@ -64,7 +64,7 @@ header nav a:hover {
     position: absolute;
     top: 5%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-40%, -40%);
     color: white;
     font-size: 3rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
