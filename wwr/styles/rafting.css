@@ -111,7 +111,7 @@ section .adventure-item h3 {
 /* Footer styles */
 footer {
     background-color: var(--secondary-color);
-    padding: 15px 0;
+    padding: 10px 0;
     text-align: center;
 }
 
