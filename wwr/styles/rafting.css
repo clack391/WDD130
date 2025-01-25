@@ -70,7 +70,7 @@ header nav a:hover {
     padding: 10px 20px;
     border: 3px solid white;
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
+    border-radius: 0%;
 }
 
 
