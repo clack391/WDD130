@@ -1,154 +1,134 @@
-/* Root Variables */
+/* Define CSS Variables */
 :root {
-    --primary-color: #0066cc;
-    --secondary-color: #ff6600;
-    --text-color: #333333;
-    --bg-color: #ffffff;
+    --primary-color: #004f2d;  /* Dark Green */
+    --secondary-color: #f4a261; /* Orange */
+    --text-color: #ffffff;  /* White */
+    --background-color: #264653;  /* Deep Blue-Green */
+    --accent-color: #e76f51; /* Red-Orange */
+    --font-primary: 'Merriweather', serif;
+    --font-secondary: 'Roboto', sans-serif;
 }
 
-/* Apply general styles */
+/* Global Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--bg-color);
+    font-family: var(--font-secondary);
     color: var(--text-color);
+    background-color: var(--background-color);
     margin: 0;
     padding: 0;
-    text-align: right;
+    max-width: 1200px;
+    margin: auto;
 }
 
-/* Header styles */
+h1, h2 {
+    font-family: var(--font-primary);
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    color: var(--secondary-color);
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Header Styling */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 2.0rem;
     background-color: var(--primary-color);
-    text-align: right;
+    padding: 15px;
 }
 
-header img {
-    width: 60px;
+.logo-box img {
+    height: 60px;
 }
 
-header nav {
-    width: 100%;
-    text-align: right;
-}
-
-header nav a {
-    color: white;
+nav a {
+    color: var(--text-color);
     text-decoration: none;
-    margin: 0 0.25rem;
+    margin: 0 15px;
     font-weight: bold;
 }
 
-header nav a:hover {
-    text-decoration: underline;
+nav a:hover {
+    color: var(--accent-color);
 }
 
-/* Hero section styling */
+/* Hero Section */
 .hero {
     position: relative;
     width: 100%;
-    text-align: center;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero h1 {
     position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ff6600;
-    font-size: 2rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    color: var(--text-color);
+    background: rgba(0, 0, 0, 0.6);
     padding: 10px 20px;
-    border: 3px solid white;
-    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 }
 
-/* History and adventure sections */
+/* Section Styling */
 section {
-    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 20px;
+    border-radius: 10px;
 }
 
-section h2 {
-    color: var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+.happy-client img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
 }
 
-section p {
-    margin-bottom: 15px;
+/* Product Gallery */
+#product-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
 }
 
-section img {
-    width: 80%;
-    border-radius: 0px;
-    margin-bottom: 15px;
+.product img {
+    width: 100%;
+    border-radius: 5px;
 }
 
-section .adventure-item {
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-section .adventure-item h3 {
-    margin: 10px 0;
-    font-size: 1.2rem;
-    color: var(--primary-color);
-}
-
-/* Footer styles */
+/* Footer Styling */
 footer {
-    background-color: var(--primary-color);
-    padding: 10px 0;
     text-align: center;
+    padding: 20px;
+    background: var(--primary-color);
+    margin-top: 20px;
 }
 
 footer a {
     margin: 0 10px;
-    display: inline-block;
-    text-align: center;
 }
 
 footer a img {
-    width: 40px;
+    width: 30px;
+    height: 30px;
 }
 
-/* Responsive styling for small screens */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 1.5rem;
-        padding: 8px 16px;
-        top: 30%; /* Adjusted for better visibility */
-    }
-
-    section img {
-        width: 90%; /* Adjust image width for smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 1.2rem;
-        padding: 5px 10px;
-        top: 35%;
-    }
-
-    header img {
-        width: 50px; /* Reduce logo size on smaller screens */
-    }
-
-    header nav a {
-        margin: 0 0.2rem;
-        font-size: 0.9rem;
-    }
+/* Remove underline only from social media links */
+footer a {
+    text-decoration: none;
 }
