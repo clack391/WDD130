@@ -1,125 +1,124 @@
-/* Define CSS Variables */
+/* Root Variables */
 :root {
-    --primary-color: #396e94;
-    --secondary-color: #e7c24f;
-    --accent-color: #a43312;
-    --background-color: #f0f0f0;
+    --primary-color: #0066cc;
+    --secondary-color: #ff6600;
+    --text-color: #333333;
+    --bg-color: #ffffff;
+    --footer-bg-color: #f1f1f1;
 }
 
-/* Basic Styling */
+/* Apply general styles */
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
-    background-color: var(--background-color);
+    text-align: center; /* Center all text by default */
 }
 
-h1, h2 {
-    color: var(--primary-color);
-}
-
-p {
-    color: var(--secondary-color);
-}
-
-a {
-    text-decoration: none;
-}
-
-/* Header Styling */
+/* Header styles */
 header {
-    text-align: center;
-    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
     background-color: var(--primary-color);
+    text-align: center; /* Ensure header text is centered */
 }
 
 header img {
-    width: 100px;
+    width: 150px;
+    margin: 0 auto; /* Center logo horizontally */
+}
+
+header nav {
+    width: 100%; /* Ensure nav links are centered */
+    text-align: center;
 }
 
 header nav a {
     color: white;
-    margin: 0 10px;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
 }
 
-/* Hero Section Styling */
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section styling */
 .hero {
     position: relative;
-    text-align: center;
+    width: 100%;
+    height: 400px;
+    text-align: center; /* Center hero text */
 }
 
 .hero img {
     width: 100%;
-    display: block;
+    height: 100%;
+    object-fit: cover;
 }
 
 .hero h1 {
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.hero article {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    max-width: 600px;
-}
-
-.hero article img {
-    float: right;
-    margin-left: 10px;
-    width: 150px;
-}
-
-/* History and Adventure Sections */
+/* History and adventure sections */
 section {
-    padding: 20px;
-    text-align: center;
+    text-align: center; /* Center section text */
 }
 
 section h2 {
-    margin-bottom: 10px;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
-.adventure-images {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+section p {
+    margin-bottom: 15px;
 }
 
-.adventure-images img {
-    width: 150px;
-    margin: 10px;
+section img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
 
-/* Footer Styling */
+section .adventure-item {
+    margin-bottom: 30px;
+    text-align: center; /* Center adventure items */
+}
+
+section .adventure-item h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+/* Footer styles */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--footer-bg-color);
+    padding: 15px 0;
+    text-align: center; /* Center footer content */
 }
 
-footer p {
-    margin: 0;
-}
-
-footer nav {
-    margin-top: 10px;
-}
-
-footer nav a {
+footer a {
     margin: 0 10px;
+    display: inline-block;
+    text-align: center; /* Center links in the footer */
 }
 
 footer a img {
     width: 30px;
-    height: 30px;
+    margin: 0 auto; /* Center images inside footer links */
 }
