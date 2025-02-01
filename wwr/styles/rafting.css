@@ -1,134 +1,154 @@
-/* Define CSS Variables */
+/* Define CSS variables for color scheme */
 :root {
-    --primary-color: #004f2d;  /* Dark Green */
-    --secondary-color: #f4a261; /* Orange */
-    --text-color: #ffffff;  /* White */
-    --background-color: #264653;  /* Deep Blue-Green */
-    --accent-color: #e76f51; /* Red-Orange */
-    --font-primary: 'Merriweather', serif;
-    --font-secondary: 'Roboto', sans-serif;
+    --primary-color: #396e94;       /* Primary color for headings */
+    --secondary-color: #e7c24f;    /* Secondary color for text */
+    --accent-color: #a43312;       /* Accent color for highlights */
+    --background-color: #f0f0f0;   /* Background color */
+    --text-color: #333;            /* Default text color */
 }
 
-/* Global Styles */
+/* General body styling */
 body {
-    font-family: var(--font-secondary);
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     color: var(--text-color);
     background-color: var(--background-color);
     margin: 0;
     padding: 0;
-    max-width: 1200px;
-    margin: auto;
-}
-
-h1, h2 {
-    font-family: var(--font-primary);
-}
-
-h1 {
-    font-size: 2.5rem;
-    text-align: center;
-}
-
-h2 {
-    color: var(--secondary-color);
-    font-size: 2rem;
-}
-
-p {
-    font-size: 1.2rem;
     line-height: 1.6;
 }
 
-/* Header Styling */
+/* Header styling */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: var(--primary-color);
-    padding: 15px;
+    padding: 20px;
+    text-align: center;
 }
 
-.logo-box img {
-    height: 60px;
+header img {
+    width: 150px;
+    height: auto;
 }
 
 nav a {
-    color: var(--text-color);
+    color: white;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: var(--accent-color);
+    text-decoration: underline;
 }
 
-/* Hero Section */
+/* Hero section styling */
 .hero {
     position: relative;
+    text-align: center;
+}
+
+.hero img {
     width: 100%;
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: auto;
+    display: block;
 }
 
 .hero h1 {
     position: absolute;
-    color: var(--text-color);
-    background: rgba(0, 0, 0, 0.6);
-    padding: 10px 20px;
-    border-radius: 5px;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Section Styling */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 10px;
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.hero article p {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+/* History section styling */
 section {
     padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    margin: 20px;
-    border-radius: 10px;
+    margin: 20px 0;
 }
 
-.happy-client img {
-    width: 100%;
-    max-width: 400px;
-    display: block;
-    margin: 0 auto;
+section h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
-/* Product Gallery */
-#product-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    padding: 20px;
+section p {
+    color: var(--text-color);
+    font-size: 1rem;
 }
 
-.product img {
-    width: 100%;
-    border-radius: 5px;
+/* Adventure section styling */
+.adventure-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
 
-/* Footer Styling */
+.adventure-images img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.adventure-images img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer styling */
 footer {
+    background-color: var(--primary-color);
+    color: white;
     text-align: center;
     padding: 20px;
-    background: var(--primary-color);
-    margin-top: 20px;
 }
 
-footer a {
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
     margin: 0 10px;
-}
-
-footer a img {
-    width: 30px;
-    height: 30px;
-}
-
-/* Remove underline only from social media links */
-footer a {
     text-decoration: none;
+}
+
+footer .social-media img {
+    width: 30px;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+footer .social-media img:hover {
+    opacity: 0.8;
 }
