@@ -118,7 +118,7 @@ section h2 {
 
 /* Footer */
 footer {
-    background-color: var(--footer-bg-color);
+    background-color: var(--primary-color);
     padding: 15px 0;
 }
 
