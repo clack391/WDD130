@@ -86,7 +86,9 @@ nav a:hover {
 /* History section styling */
 .history {
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px auto; /* Center the section horizontally */
+    max-width: 800px;  /* Limit the width for better readability */
+    text-align: center; /* Center the text */
 }
 
 .history h2 {
@@ -98,12 +100,15 @@ nav a:hover {
 .history p {
     color: var(--text-color);
     font-size: 1rem;
+    text-align: left; /* Align paragraph text to the left */
 }
 
 /* Adventure section styling */
 .adventure {
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px auto; /* Center the section horizontally */
+    max-width: 800px;  /* Limit the width for better readability */
+    text-align: center; /* Center the text */
 }
 
 .adventure h2 {
@@ -116,7 +121,7 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: center;
+    justify-content: center; /* Center the images horizontally */
 }
 
 .adventure-images img {
