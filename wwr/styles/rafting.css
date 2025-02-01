@@ -71,14 +71,6 @@ nav a:hover {
     max-width: 300px;
 }
 
-.hero article img {
-    float: right;
-    margin-left: 10px;
-    width: 100px;
-    height: auto;
-    border-radius: 8px;
-}
-
 .hero article p {
     margin: 0;
     font-size: 1rem;
@@ -86,23 +78,34 @@ nav a:hover {
 }
 
 /* History section styling */
-section {
+.history {
     padding: 20px;
     margin: 20px 0;
 }
 
-section h2 {
+.history h2 {
     color: var(--primary-color);
     font-size: 2rem;
     margin-bottom: 10px;
 }
 
-section p {
+.history p {
     color: var(--text-color);
     font-size: 1rem;
 }
 
 /* Adventure section styling */
+.adventure {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.adventure h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
 .adventure-images {
     display: flex;
     flex-wrap: wrap;
