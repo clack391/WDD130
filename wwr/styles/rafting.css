@@ -56,7 +56,7 @@ header nav ul li a:hover {
 /* Hero Section */
 .hero {
     position: relative;
-    width: 200%;
+    width: 100%;
     height: 400px;
 }
 
@@ -86,7 +86,7 @@ article {
 
 .float-img {
     float: left;
-    width: 150px;
+    width: 200px;
     margin-right: 15px;
     border-radius: 5px;
 }
