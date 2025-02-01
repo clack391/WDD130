@@ -1,137 +1,177 @@
-/* Root Variables */
 :root {
-    --primary-color: #0066cc;
-    --secondary-color: #ff6600;
-    --text-color: #333;
-    --bg-color: #ffffff;
+    --primary-color: #5D2A42;
+    --secondary-color: #FCB1A6;
+    --font-color: #FFDCCC;
+    --background-color: #FFF9EC;
 }
 
-/* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    font-family: 'Kanit', sans-serif;
+    color: var(--font-color);
+    background-color: var(--background-color);
     margin: 0;
     padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;  
+}
+
+header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+    background-color: var(--primary-color); 
+}
+
+header h1 {
+    font-size: 2rem;
+    color: var(--font-color);
     text-align: center;
 }
 
-/* Header */
-header {
+.logo-box img {
+    max-height: 50px;
+}
+
+nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    padding: 0.5rem 1rem;
-    background-color: var(--primary-color);
-    height: 60px;
-}
-
-header img {
-    width: 120px;
-}
-
-header nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    gap: 20px;
 }
 
-header nav ul li {
-    display: inline;
+nav ul li {
+    margin-left: 30px;
 }
 
-header nav ul li a {
-    color: white;
+nav ul li a {
+    color: var(--font-color);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 400;
 }
 
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Hero Section */
 .hero {
     position: relative;
-    width: 100%;
-    height: 400px;
+    text-align: center;
+    color: var(--secondary-color);
 }
 
 .hero img {
+    display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
 }
 
 .hero h1 {
     position: absolute;
-    top: 50%;
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
-    font-size: 3rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 5rem;
+    padding: 10px 20px;
 }
 
-/* Article Section */
-article {
-    text-align: left;
+.hero article {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(93, 42, 66, 0.5);
+    color: var(--font-color);
     padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+    width: 80%;
+    max-width: 600px;
 }
 
-.float-img {
-    float: left;
-    width: 200px;
-    margin-right: 15px;
-    border-radius: 5px;
+.hero article img {
+    float: right;
+    margin-left: 20px;
+    max-width: 50%;
 }
 
-/* History & Adventure Sections */
-section {
+.hero article p {
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+section.history {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+}
+
+section.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+section.adventures img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1 / 1; 
+}
+
+section.adventures figure {
+    margin: 0;
+}
+
+section.adventures figcaption {
     text-align: center;
-    padding: 20px;
+    color: var(--font-color);
+    background-color: var(--primary-color);
+    padding: 5px;
+}
+
+section p {
+    background-color: var(--primary-color);
+}
+
+section.adventures h2 {
+    grid-column: 1/6;
 }
 
 section h2 {
-    color: var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-family: "Kanit", serif;
+    font-weight: 200;
+    font-style: normal;  
 }
 
-.adventure-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.adventure-gallery img {
-    width: 300px;
-    border-radius: 5px;
-}
-
-/* Footer */
 footer {
-    background-color: var(--primary-color);
-    padding: 10px 0;
-}
-
-footer .social-media {
     display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-footer a img {
-    width: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--font-color);
 }
 
 footer p {
-    margin-top: 10px;
-    font-size: 0.9rem;
+    margin: 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links img {
+    max-height: 30px;
+    text-decoration: none;
 }
