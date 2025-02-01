@@ -2,58 +2,61 @@
 :root {
     --primary-color: #0066cc;
     --secondary-color: #ff6600;
-    --text-color: #333333;
+    --text-color: #333;
     --bg-color: #ffffff;
     --footer-bg-color: #f1f1f1;
 }
 
-/* Apply general styles */
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     margin: 0;
     padding: 0;
-    text-align: center; /* Center all text by default */
+    text-align: center;
 }
 
-/* Header styles */
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     background-color: var(--primary-color);
-    text-align: center; /* Ensure header text is centered */
 }
 
 header img {
     width: 150px;
-    margin: 0 auto; /* Center logo horizontally */
 }
 
-header nav {
-    width: 100%; /* Ensure nav links are centered */
-    text-align: center;
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
 }
 
-header nav a {
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
     color: white;
     text-decoration: none;
-    margin: 0 1rem;
     font-weight: bold;
 }
 
-header nav a:hover {
+header nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Hero section styling */
+/* Hero Section */
 .hero {
     position: relative;
     width: 100%;
     height: 400px;
-    text-align: center; /* Center hero text */
 }
 
 .hero img {
@@ -72,9 +75,25 @@ header nav a:hover {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* History and adventure sections */
+/* Article Section */
+article {
+    text-align: left;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.float-img {
+    float: left;
+    width: 150px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+/* History & Adventure Sections */
 section {
-    text-align: center; /* Center section text */
+    text-align: center;
+    padding: 20px;
 }
 
 section h2 {
@@ -84,41 +103,35 @@ section h2 {
     margin-bottom: 15px;
 }
 
-section p {
-    margin-bottom: 15px;
+.adventure-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
-section img {
-    width: 100%;
+.adventure-gallery img {
+    width: 200px;
     border-radius: 5px;
-    margin-bottom: 15px;
 }
 
-section .adventure-item {
-    margin-bottom: 30px;
-    text-align: center; /* Center adventure items */
-}
-
-section .adventure-item h3 {
-    margin: 10px 0;
-    font-size: 1.2rem;
-    color: var(--primary-color);
-}
-
-/* Footer styles */
+/* Footer */
 footer {
     background-color: var(--footer-bg-color);
     padding: 15px 0;
-    text-align: center; /* Center footer content */
 }
 
-footer a {
-    margin: 0 10px;
-    display: inline-block;
-    text-align: center; /* Center links in the footer */
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 footer a img {
     width: 30px;
-    margin: 0 auto; /* Center images inside footer links */
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.9rem;
 }
