@@ -21,7 +21,9 @@ body {
 header {
     background-color: var(--primary-color);
     padding: 20px;
-    text-align: center;
+    display: flex;                  /* Use flexbox for layout */
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center;            /* Vertically center items */
 }
 
 header img {
@@ -29,10 +31,14 @@ header img {
     height: auto;
 }
 
+nav {
+    display: flex;                  /* Use flexbox for nav links */
+    gap: 15px;                      /* Space between nav links */
+}
+
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
     font-weight: bold;
 }
 
