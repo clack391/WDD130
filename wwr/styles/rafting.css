@@ -22,12 +22,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     background-color: var(--primary-color);
+    height: 60px;
 }
 
 header img {
-    width: 150px;
+    width: 120px;
 }
 
 header nav ul {
