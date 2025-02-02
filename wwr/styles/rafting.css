@@ -81,7 +81,7 @@ nav ul li a {
 
 .hero article {
     position: absolute;
-    bottom: 50%;
+    bottom: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(93, 42, 66, 0.5);
