@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #0066cc;
-    --secondary-color: #ff6600;
-    --font-color: #333;
-    --background-color: #ffffff;
+    --primary-color: #5D2A42;
+    --secondary-color: #FCB1A6;
+    --font-color: #FFDCCC;
+    --background-color: #FFF9EC;
 }
 
 body {
@@ -15,22 +15,24 @@ body {
     margin: 0 auto;  
 }
 
+
 header {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 10px 20px; 
-    background-color: var(--primary-color); 
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+}
+
+.logo-box img {
+    max-height: 50px;
 }
 
 header h1 {
     font-size: 2rem;
     color: var(--font-color);
     text-align: center;
-}
-
-.logo-box img {
-    max-height: 50px;
+    margin: 0;
 }
 
 nav ul {
@@ -104,10 +106,32 @@ nav ul li a {
 
 section.history {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr auto 1fr; 
+    gap: 20px;
     padding: 20px;
+    align-items: center;
 }
 
+section.history h2 {
+    grid-column: 2; 
+    text-align: center;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+section.history p {
+    background-color: var(--primary-color);
+    padding: 20px;
+    margin: 0;
+}
+
+section.history p:first-of-type {
+    grid-column: 1; 
+}
+
+section.history p:last-of-type {
+    grid-column: 3; 
+}
 section.adventures {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -133,21 +157,13 @@ section.adventures figcaption {
     padding: 5px;
 }
 
-section p {
-    background-color: var(--primary-color);
-}
-
 section.adventures h2 {
-    grid-column: 1/6;
-}
-
-section h2 {
+    grid-column: 1 / -1;
+    text-align: center;
     color: var(--primary-color);
-    font-family: "Kanit", serif;
-    font-weight: 200;
-    font-style: normal;  
 }
 
+/* Footer */
 footer {
     display: flex;
     justify-content: space-between;
