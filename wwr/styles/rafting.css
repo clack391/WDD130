@@ -84,7 +84,7 @@ nav ul li a {
     bottom: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(156, 104, 104);
+    background-color: rgb(146, 119, 119);
     color: var(--font-color);
     padding: 20px;
     width: 80%;
