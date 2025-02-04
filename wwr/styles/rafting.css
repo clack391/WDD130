@@ -178,27 +178,30 @@ section.adventures h2 {
     margin: 0 auto;    
     padding: 2rem;    
     background-color: #ffffff; 
-    /* White background */}
+    /* White background */
+}
 
 /* Main Heading */main h1 {    
     text-align: center;    
     font-size: 2.5rem;    
     font-weight: 400;    
     color: #cc5200;    
-    margin-bottom: 1.5rem;}
+    margin-bottom: 1.5rem;
+}
     
-    /* Section Styling */main section {    
-        background-color: #f9f9f9; /* Light gray background */    
-        padding: 1.5rem;    
-        margin-bottom: 2rem;    
-        border-radius: 10px;    
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);}/* Section Headings 
+/* Section Styling */main section {    
+    background-color: #f9f9f9; /* Light gray background */    
+    padding: 1.5rem;    
+    margin-bottom: 2rem;    
+    border-radius: 10px;    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);}
         
-        */main section h2 {    
-            font-size: 2rem;    
-            text-align: center;    
-            color: #2c3e50;    
-            margin-bottom: 1rem;}
+/* Section Headings */main section h2 {    
+    font-size: 2rem;    
+    text-align: center;    
+    color: #2c3e50;    
+    margin-bottom: 1rem;
+}
 
 /* Employee Section Styling */
 .employees {
