@@ -19,7 +19,7 @@
         <div class="logo-box">
             <img src="images/logo.png" alt="Rafting Logo">
         </div>
-        <nav>
+        <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -71,13 +71,22 @@
                 <input type="email" id="email" name="email" required>
                 <fieldset>
                     <legend>Reason for Contacting Us:</legend>
-                    <label for="general-inquiry"><input type="radio" id="general-inquiry" name="purpose" value="General Inquiry" required> General Inquiry</label>
-                    <label for="reservation-question"><input type="radio" id="reservation-question" name="purpose" value="Reservation Question"> Reservation Question</label>
-                    <label for="website-suggestion"><input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+                    <label>
+                        <input type="radio" id="general-inquiry" name="purpose" value="General Inquiry" required> General Inquiry
+                    </label>
+                    <label>
+                        <input type="radio" id="reservation-question" name="purpose" value="Reservation Question"> Reservation Question
+                    </label>
+                    <label>
+                        <input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion"> Website Suggestion
+                    </label>
                 </fieldset>
                 <label for="message">Your Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
-                <label for="subscribe"><input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+                <label>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
                 <button type="submit">Send Message</button>
             </form>
         </section>
@@ -85,7 +94,7 @@
 
     <footer>
         <p>© 2025 | White Water Rafting | Precious Onotu</p>
-        <nav class="social-links">
+        <nav class="social-links" aria-label="Social Media Links">
             <a href="https://facebook.com">
                 <img src="images/facebook-icon.png" alt="Facebook">
             </a>
