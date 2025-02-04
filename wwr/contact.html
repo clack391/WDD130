@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>White Water Rafting Company - About Us</title>
-    <meta name="description" content="Learn more about The Rapids Rafting Company, our history, and the adventures we offer. Join us for an unforgettable rafting experience!">
+    <title>White Water Rafting Company - Contact Us</title>
+    <meta name="description" content="Contact The Rapids Rafting Company for inquiries, reservations, or suggestions. Reach us by phone, email, or visit our location.">
     <meta name="author" content="Precious Onotu">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
+
 <body>
+
     <header>
         <div class="logo-box">
             <img src="images/logo.png" alt="Rafting Logo">
@@ -25,46 +28,65 @@
             </ul>
         </nav>
     </header>
-    <div class="hero">
-        <img src="images/hero.jpg" alt="Rafting in Action">
-        <h1>White Water Rafting</h1>
-        <!-- In the hero section -->
-<article>
-    <h2 class="hero-heading">Our Mission</h2>
-    <img src="images/happy-client.jpg" alt="Happy Client">
-    <p>Our mission at White Water Rafting is to deliver unforgettable adventures, connecting people with nature while promoting safety, camaraderie, and environmental care</p>
-</article>
-    </div>
+
     <main>
-        <section class="history">
-            <h2>History</h2>
-            <p>Founded in 2025 by Precious Onotu, White Water Rafting was born from a passion for adventure and nature’s untamed beauty and love from the outside world.</p>
-            <p>Starting with a single raft, it quickly grew into a renowned company known for thrilling experiences, and a commitment to safety and the environment. Today, it stands as a symbol of exploration.</p>
+        <section class="contact-info">
+            <h2>Contact Us</h2>
+            <p><strong>Address:</strong> 123 Rapids Way, Adventure Town, USA</p>
+            <p><strong>Phone:</strong> (555) 123-4567</p>
+            <p><strong>Email:</strong> contact@rapidsrafting.com</p>
+
+            <!-- Embedded Google Map -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345086196!2d144.95565131567846!3d-37.81732797975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf4c8a2e1c32f8b0!2sMelbourne%20City%20Centre!5e0!3m2!1sen!2sau!4v1615785671234"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
         </section>
-        <section class="adventures">
-            <h2>Adventures Await You!</h2>
-            <figure>
-                <img src="images/rafting1.jpg" alt="Los Dientes del Diablo">
-                <figcaption>Los Dientes del Diablo</figcaption>
-            </figure>
-            <figure>
-                <img src="images/rafting2.jpg" alt="Big Mallard">
-                <figcaption>Big Mallard</figcaption>
-            </figure>
-            <figure>
-                <img src="images/rafting3.jpg" alt="Half Day Adventure">
-                <figcaption>Half Day Adventure</figcaption>
-            </figure>
-            <figure>
-                <img src="images/rafting4.jpg" alt="Another Adventure">
-                <figcaption>Another Adventure</figcaption>
-            </figure>
-            <figure>
-                <img src="images/rafting5.jpg" alt="Yet Another Adventure">
-                <figcaption>Yet Another Adventure</figcaption>
-            </figure>
+
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+            <div class="employee-container">
+                <figure>
+                    <img src="images/employee1.jpg" alt="John Doe - Tour Guide">
+                    <figcaption>John Doe - Tour Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Jane Smith - Customer Support">
+                    <figcaption>Jane Smith - Customer Support</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Mark Johnson - Safety Instructor">
+                    <figcaption>Mark Johnson - Safety Instructor</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Reason for Contacting Us:</legend>
+                    <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+                </fieldset>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
+
     <footer>
         <p>© 2025 | White Water Rafting | Precious Onotu</p>
         <nav class="social-links">
@@ -78,6 +100,8 @@
                 <img src="images/instagram-icon.png" alt="Instagram">
             </a>
         </nav>
+        <p><a href="images/contact-wireframe.png">View Wireframe</a></p>
     </footer>
+
 </body>
 </html>
