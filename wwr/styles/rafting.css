@@ -169,6 +169,19 @@ section.adventures h2 {
     color: var(--primary-color);
 }
 
+.map-container {
+    width: 100%;
+    max-width: 600px; /* Adjust size as needed */
+    margin: 20px auto; /* Center the map */
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: none; /* Removes border */
+}
+
+
 footer {
     display: flex;
     justify-content: space-between;
