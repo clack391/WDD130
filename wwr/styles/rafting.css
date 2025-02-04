@@ -1,7 +1,8 @@
 :root {
-    --primary-color: #0066cc;
-    --secondary-color: #ff6600;
+    --primary-color: #0059b3; /* Darker blue for better contrast */
+    --secondary-color: #cc5200; /* Darker orange */
     --font-color: #000000;
+    --text-on-dark: #ffffff; /* New variable for light text on dark backgrounds */
     --background-color: #ffffff;
 }
 
@@ -21,6 +22,7 @@ header {
     align-items: center;
     padding: 10px 20px;
     background-color: var(--primary-color);
+    color: var(--text-on-dark); /* Added text color for dark background */
 }
 
 .logo-box img {
@@ -29,7 +31,7 @@ header {
 
 header h1 {
     font-size: 2rem;
-    color: var(--font-color);
+    color: var(--text-on-dark); /* Changed to light text */
     text-align: center;
     margin: 0;
 }
@@ -48,7 +50,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--font-color);
+    color: var(--text-on-dark); /* Changed to light text */
     text-decoration: none;
     font-weight: 400;
 }
@@ -83,16 +85,17 @@ nav ul li a {
     bottom: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #927777c7;
-    color: var(--font-color);
+    background-color: rgba(0, 0, 0, 0.7); /* Darker overlay for better contrast */
+    color: var(--text-on-dark);
     padding: 20px;
     width: 80%;
     max-width: 600px;
 }
+
 .hero article h2 {
     font-size: 1.5rem;
     margin: 0 0 10px 0;
-    color: var(--font-color);
+    color: var(--text-on-dark);
     text-align: left;
 }
 
@@ -126,16 +129,9 @@ section.history h2 {
 
 section.history p {
     background-color: var(--primary-color);
+    color: var(--text-on-dark); /* Added light text color */
     padding: 20px;
     margin: 0;
-}
-
-section.history p:first-of-type {
-    grid-column: 1; 
-}
-
-section.history p:last-of-type {
-    grid-column: 3; 
 }
 
 section.adventures {
@@ -175,7 +171,7 @@ footer {
     align-items: center;
     padding: 20px;
     background-color: var(--primary-color);
-    color: var(--font-color);
+    color: var(--text-on-dark); /* Changed to light text */
 }
 
 footer p {
@@ -195,4 +191,5 @@ footer p {
 .social-links img {
     max-height: 30px;
     text-decoration: none;
+    filter: brightness(0) invert(1); /* Make social icons white */
 }
