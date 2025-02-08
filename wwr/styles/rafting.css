@@ -287,6 +287,15 @@ footer p {
     margin: 0;
 }
 
+footer p a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
 .social-links {
     display: flex;
     justify-content: flex-end;
