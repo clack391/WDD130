@@ -306,7 +306,7 @@ footer p {
 .wireframe-link {
     display: inline-block;
     background-color: var(--secondary-color); /* Burnt Orange */
-    color: var(--text-on-dark); /* White text */
+    color: var(--secondary-color); /* White text */
     padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
