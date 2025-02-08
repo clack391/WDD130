@@ -315,5 +315,5 @@ footer p {
 }
 
 .wireframe-link:hover {
-    background-color: var(--primary-color); /* Deep Blue */
+    background-color: var(--secondary-color); /* Deep Blue */
 }
