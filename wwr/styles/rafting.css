@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #0059b3; /* Darker blue for better contrast */
+    --primary-color: #0059b3; /* Darker blue */
     --secondary-color: #cc5200; /* Darker orange */
     --font-color: #000000;
     --text-on-dark: #ffffff; /* New variable for light text on dark backgrounds */
