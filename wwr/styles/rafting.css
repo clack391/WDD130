@@ -302,3 +302,18 @@ footer p {
     text-decoration: none;
     filter: brightness(0) invert(1); /* Make social icons white */
 }
+
+.wireframe-link {
+    display: inline-block;
+    background-color: var(--secondary-color); /* Burnt Orange */
+    color: var(--text-on-dark); /* White text */
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.wireframe-link:hover {
+    background-color: var(--primary-color); /* Deep Blue */
+}
