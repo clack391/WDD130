@@ -162,7 +162,7 @@ section.adventures figure {
 
 section.adventures figcaption {
     text-align: center;
-    color: var(--font-color);
+    color: var(--text-on-dark);
     background-color: var(--primary-color);
     padding: 5px;
 }
