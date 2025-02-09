@@ -3,47 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Experience the best white water rafting adventures!">
-    <title>Home - White Water Rafting</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Welcome to our white water rafting adventures. Explore our trips and join us for an unforgettable experience.">
+    <title>Home | White Water Rafting</title>
+    <link rel="stylesheet" href="rafting.css">
 </head>
 <body>
+    <header>
+        <img src="images/logo.png" alt="Rafting Company Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <img src="images/logo.png" alt="Rafting Logo">
-    <h1>White Water Rafting Adventures</h1>
-</header>
+    <main>
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Rafting Adventure">
+            <h1>Experience the Thrill of White Water Rafting</h1>
+        </section>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="trips.html">Trips</a>
-    <a href="about.html">About Us</a>
-    <a href="contact.html">Contact Us</a>
-</nav>
+        <section class="newsletter">
+            <h2>Sign Up for Updates</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
 
-<main>
-    <section class="hero">
-        <img src="images/hero.jpg" alt="Rafting Adventure">
-        <h2>Unleash the Adventure!</h2>
-    </section>
+        <section class="call-to-action">
+            <h2>Ready for an Adventure?</h2>
+            <p>Explore our trips and book your next adventure today!</p>
+            <a href="trips.html" class="cta-button">View Trips</a>
+        </section>
 
-    <section class="newsletter">
-        <h3>Join Our Newsletter</h3>
-        <form>
-            <input type="email" placeholder="Enter your email" required>
-            <button type="submit">Subscribe</button>
-        </form>
-    </section>
+        <section class="grid">
+            <div>
+                <img src="images/rafting1.jpg" alt="Rafting in action">
+                <p>Join us for an unforgettable white water rafting experience.</p>
+            </div>
+            <div>
+                <img src="images/rafting2.jpg" alt="Team rafting">
+                <p>Perfect for beginners and experienced rafters alike.</p>
+            </div>
+        </section>
+    </main>
 
-    <section class="cta">
-        <h3>Book Your Next Adventure Now!</h3>
-        <a href="trips.html" class="btn">View Trips</a>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2025 White Water Rafting | All rights reserved.</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2025 White Water Rafting. All rights reserved.</p>
+    </footer>
 </body>
 </html>
