@@ -3,60 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to our white water rafting adventures. Explore our trips and join us for an unforgettable experience.">
-    <title>Home | White Water Rafting</title>
+    <meta name="description" content="Experience thrilling white water rafting adventures. Book your trip today!">
+    <title>White Water Rafting Co. | Home</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Rafting Company Logo">
+        <img src="images/logo.png" alt="Rafting Site Logo">
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero">
             <img src="images/hero.jpg" alt="Rafting Adventure">
             <h1>Experience the Thrill of White Water Rafting</h1>
         </section>
 
+        <!-- Newsletter -->
         <section class="newsletter">
             <h2>Sign Up for Updates</h2>
             <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Your Email">
                 <button type="submit">Subscribe</button>
             </form>
         </section>
 
-        <section class="call-to-action">
+        <!-- Call to Action -->
+        <section class="cta">
             <h2>Ready for an Adventure?</h2>
-            <p>Explore our trips and book your next adventure today!</p>
-            <a href="trips.html" class="cta-button">View Trips</a>
+            <a href="trips.html" class="button">View Our Trips</a>
         </section>
 
-        <section class="grid">
-            <div>
-                <img src="images/rafting1.jpg" alt="Rafting in action">
-                <p>Join us for an unforgettable white water rafting experience.</p>
+        <!-- Grid Layout -->
+        <section class="grid-container">
+            <div class="grid-item">
+                <img src="images/rafting1.jpg" alt="Family Rafting">
+                <p>Family-friendly trips for all ages.</p>
             </div>
-            <div>
-                <img src="images/rafting2.jpg" alt="Team rafting">
-                <p>Perfect for beginners and experienced rafters alike.</p>
+            <div class="grid-item">
+                <img src="images/rafting3.jpg" alt="Extreme Rafting">
+                <p>Extreme rapids for adrenaline seekers.</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 White Water Rafting. All rights reserved.</p>
+        <p>&copy;2024 | White Water Rafting Co. | Jane Doe</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
+        </nav>
     </footer>
 </body>
 </html>
