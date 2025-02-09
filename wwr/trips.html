@@ -3,93 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore our exciting rafting trips and packages.">
-    <title>White Water Rafting Co. | Trips</title>
+    <meta name="description" content="Explore our exciting white water rafting trips and book your adventure today.">
+    <title>Trips | White Water Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Rafting Site Logo">
+        <img src="images/logo.png" alt="Rafting Company Logo">
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Call to Action -->
-        <section class="cta-trips">
-            <h2>Plan Your Adventure Today!</h2>
-            <a href="contact.html" class="button">Contact Us</a>
-        </section>
+        <h1>Our Trips & Adventures</h1>
 
-        <!-- Trip Descriptions -->
-        <section class="trip-cards">
+        <section class="trip-list">
             <div class="trip">
-                <img src="images/trip1.jpg" alt="Beginner Rapids">
-                <h3>Beginner Rapids</h3>
-                <p>Perfect for first-timers. 2-hour trip with professional guides.</p>
+                <img src="images/trip1.jpg" alt="Calm River Adventure">
+                <h2>Calm River Adventure</h2>
+                <p>Perfect for families and first-time rafters. Enjoy a scenic and relaxed trip.</p>
             </div>
+
             <div class="trip">
-                <img src="images/trip2.jpg" alt="Advanced Adventure">
-                <h3>Advanced Adventure</h3>
-                <p>Thrilling 5-hour journey for experienced rafters.</p>
+                <img src="images/trip2.jpg" alt="Intermediate Rapids">
+                <h2>Intermediate Rapids</h2>
+                <p>A mix of calm waters and thrilling rapids, great for adventure seekers.</p>
             </div>
+
             <div class="trip">
-                <img src="images/trip3.jpg" alt="Family Package">
-                <h3>Family Package</h3>
-                <p>Full-day trip with safety gear and lunch included.</p>
+                <img src="images/trip3.jpg" alt="Extreme Whitewater Challenge">
+                <h2>Extreme Whitewater Challenge</h2>
+                <p>For experienced rafters looking for the ultimate adrenaline rush.</p>
             </div>
         </section>
 
-        <!-- Trips Table -->
-        <table>
-            <thead>
+        <section class="trip-table">
+            <h2>Available Trips</h2>
+            <table>
                 <tr>
-                    <th>Trip</th>
-                    <th>Duration</th>
-                    <th>Difficulty</th>
-                    <th>Price</th>
+                    <th scope="col">Trip Name</th>
+                    <th scope="col">Difficulty</th>
+                    <th scope="col">Duration</th>
+                    <th scope="col">Price</th>
                 </tr>
-            </thead>
-            <tbody>
                 <tr>
-                    <td>Beginner Rapids</td>
-                    <td>2 hours</td>
+                    <td>Calm River Adventure</td>
                     <td>Easy</td>
-                    <td>$50/person</td>
+                    <td>2 hours</td>
+                    <td>$50</td>
                 </tr>
                 <tr>
-                    <td>Advanced Adventure</td>
-                    <td>5 hours</td>
-                    <td>Hard</td>
-                    <td>$120/person</td>
-                </tr>
-                <tr>
-                    <td>Family Package</td>
-                    <td>8 hours</td>
+                    <td>Intermediate Rapids</td>
                     <td>Medium</td>
-                    <td>$200/family</td>
+                    <td>4 hours</td>
+                    <td>$90</td>
                 </tr>
-            </tbody>
-        </table>
+                <tr>
+                    <td>Extreme Whitewater Challenge</td>
+                    <td>Hard</td>
+                    <td>6 hours</td>
+                    <td>$150</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="contact-cta">
+            <h2>Have Questions? Contact Us!</h2>
+            <a href="contact.html" class="cta-button">Get in Touch</a>
+        </section>
     </main>
 
     <footer>
-        <p>© 2025 | White Water Rafting | Precious Onotu</p>
-        <nav class="social-links" aria-label="Social Media Links">
-            <a href="https://facebook.com">
-                <img src="images/facebook-icon.png" alt="Facebook">
-            </a>
-            <a href="https://twitter.com">
-                <img src="images/twitter-icon.png" alt="Twitter">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram-icon.png" alt="Instagram">
-            </a>
-        </nav>
+        <p>&copy; 2025 White Water Rafting. All rights reserved.</p>
     </footer>
 </body>
 </html>

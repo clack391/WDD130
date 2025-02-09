@@ -1,83 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>White Water Rafting Company - Contact Us</title>
-    <meta name="description" content="Contact White Water Rafting Company for inquiries, reservations, or suggestions. Reach us by phone, email, or visit our location.">
-    <meta name="author" content="Precious Onotu">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&display=swap" rel="stylesheet">
+    <meta name="description" content="Welcome to our white water rafting adventures. Explore our trips and join us for an unforgettable experience.">
+    <title>Home | White Water Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
-
 <body>
-
     <header>
-        <div class="logo-box">
-            <img src="images/logo.png" alt="Rafting Logo">
-        </div>
-        <nav aria-label="Main Navigation">
+        <img src="images/logo.png" alt="Rafting Company Logo">
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section class="hero">
             <img src="images/hero.jpg" alt="Rafting Adventure">
             <h1>Experience the Thrill of White Water Rafting</h1>
         </section>
 
-        <!-- Newsletter -->
         <section class="newsletter">
             <h2>Sign Up for Updates</h2>
             <form>
-                <input type="text" name="name" placeholder="Your Name">
-                <input type="email" name="email" placeholder="Your Email">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
                 <button type="submit">Subscribe</button>
             </form>
         </section>
 
-        <!-- Call to Action -->
-        <section class="cta">
+        <section class="call-to-action">
             <h2>Ready for an Adventure?</h2>
-            <a href="trips.html" class="button">View Our Trips</a>
+            <p>Explore our trips and book your next adventure today!</p>
+            <a href="trips.html" class="cta-button">View Trips</a>
         </section>
 
-        <!-- Grid Layout -->
-        <section class="grid-container">
-            <div class="grid-item">
-                <img src="images/rafting1.jpg" alt="Family Rafting">
-                <p>Family-friendly trips for all ages.</p>
+        <section class="grid">
+            <div>
+                <img src="images/rafting1.jpg" alt="Rafting in action">
+                <p>Join us for an unforgettable white water rafting experience.</p>
             </div>
-            <div class="grid-item">
-                <img src="images/rafting3.jpg" alt="Extreme Rafting">
-                <p>Extreme rapids for adrenaline seekers.</p>
+            <div>
+                <img src="images/rafting2.jpg" alt="Team rafting">
+                <p>Perfect for beginners and experienced rafters alike.</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2025 | White Water Rafting | Precious Onotu</p>
-        <nav class="social-links" aria-label="Social Media Links">
-            <a href="https://facebook.com">
-                <img src="images/facebook-icon.png" alt="Facebook">
-            </a>
-            <a href="https://twitter.com">
-                <img src="images/twitter-icon.png" alt="Twitter">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram-icon.png" alt="Instagram">
-            </a>
-        </nav>
+        <p>&copy; 2025 White Water Rafting. All rights reserved.</p>
     </footer>
 </body>
 </html>
