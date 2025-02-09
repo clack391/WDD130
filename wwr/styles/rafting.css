@@ -348,10 +348,20 @@ section.adventures h2 {
     margin: 2rem;
 }
 
-.trip {
+.trip-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures responsiveness */
     text-align: center;
-    width: 30%;
+    gap: 20px; /* Adds spacing between trip items */
 }
+
+.trip {
+    flex: 1 1 300px; /* Ensures each trip takes up equal space */
+    max-width: 350px; /* Optional: Adjusts the maximum width */
+}
+
 
 .trip img {
     width: 100%;
