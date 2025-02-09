@@ -273,6 +273,114 @@ section.adventures h2 {
     margin-bottom: 10px;
 }
 
+/* Newsletter Signup */
+.newsletter {
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter input {
+    margin: 5px;
+    padding: 8px;
+    width: 80%;
+    max-width: 300px;
+}
+
+.newsletter button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Call to Action */
+.cta {
+    text-align: center;
+    margin: 2rem;
+}
+
+.cta .btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+/* Info Grid */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 2rem;
+}
+
+.info-grid div {
+    text-align: center;
+}
+
+.info-grid img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Trip Gallery */
+.trip-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+
+.trip {
+    text-align: center;
+    width: 30%;
+}
+
+.trip img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Trips Table */
+.trips-table {
+    margin: 2rem auto;
+    text-align: center;
+    width: 80%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #004466;
+    color: white;
+}
 
 footer {
     display: flex;
