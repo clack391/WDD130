@@ -20,13 +20,13 @@ header {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    padding: 10px 20px;
+    padding: 5px 15px;
     background-color: var(--primary-color);
     color: var(--text-on-dark); /* Added text color for dark background */
 }
 
 .logo-box img {
-    max-height: 50px;
+    max-height: 40px;
 }
 
 header h1 {
