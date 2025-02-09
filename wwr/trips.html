@@ -3,42 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore our exciting white water rafting trips!">
-    <title>Trips - White Water Rafting</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Explore our exciting white water rafting trips and book your adventure today.">
+    <title>Trips | White Water Rafting</title>
+    <link rel="stylesheet" href="rafting.css">
 </head>
 <body>
+    <header>
+        <img src="images/logo.png" alt="Rafting Company Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <img src="images/logo.png" alt="Rafting Logo">
-    <h1>White Water Rafting Adventures</h1>
-</header>
+    <main>
+        <h1>Our Trips & Adventures</h1>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="trips.html">Trips</a>
-    <a href="about.html">About Us</a>
-    <a href="contact.html">Contact Us</a>
-</nav>
+        <section class="trip-list">
+            <div class="trip">
+                <img src="images/trip1.jpg" alt="Calm River Adventure">
+                <h2>Calm River Adventure</h2>
+                <p>Perfect for families and first-time rafters. Enjoy a scenic and relaxed trip.</p>
+            </div>
 
-<main>
-    <h2>Our Rafting Trips</h2>
-    <section class="trip">
-        <img src="images/river1.jpg" alt="River Adventure">
-        <h3>Beginner's Adventure</h3>
-        <p>A fun trip for first-time rafters!</p>
-    </section>
+            <div class="trip">
+                <img src="images/trip2.jpg" alt="Intermediate Rapids">
+                <h2>Intermediate Rapids</h2>
+                <p>A mix of calm waters and thrilling rapids, great for adventure seekers.</p>
+            </div>
 
-    <section class="trip">
-        <img src="images/river2.jpg" alt="White Water Rapids">
-        <h3>Extreme Rapids</h3>
-        <p>For those seeking the ultimate thrill!</p>
-    </section>
-</main>
+            <div class="trip">
+                <img src="images/trip3.jpg" alt="Extreme Whitewater Challenge">
+                <h2>Extreme Whitewater Challenge</h2>
+                <p>For experienced rafters looking for the ultimate adrenaline rush.</p>
+            </div>
+        </section>
 
-<footer>
-    <p>&copy; 2025 White Water Rafting | All rights reserved.</p>
-</footer>
+        <section class="trip-table">
+            <h2>Available Trips</h2>
+            <table>
+                <tr>
+                    <th>Trip Name</th>
+                    <th>Difficulty</th>
+                    <th>Duration</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Calm River Adventure</td>
+                    <td>Easy</td>
+                    <td>2 hours</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td>Intermediate Rapids</td>
+                    <td>Medium</td>
+                    <td>4 hours</td>
+                    <td>$90</td>
+                </tr>
+                <tr>
+                    <td>Extreme Whitewater Challenge</td>
+                    <td>Hard</td>
+                    <td>6 hours</td>
+                    <td>$150</td>
+                </tr>
+            </table>
+        </section>
 
+        <section class="contact-cta">
+            <h2>Have Questions? Contact Us!</h2>
+            <a href="contact.html" class="cta-button">Get in Touch</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 White Water Rafting. All rights reserved.</p>
+    </footer>
 </body>
 </html>
