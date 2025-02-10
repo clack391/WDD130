@@ -37,9 +37,10 @@ header h1 {
 }
 
 main h1 {
-    color: var(--text-on-dark); /* Changed to light text */
-    text-decoration: none;
-    font-weight: 400;
+    grid-column: 1 / -1; /* Span all columns */
+    text-align: center;
+    color: var(--primary-color);
+    margin: 20px 0;
 }
 
 
