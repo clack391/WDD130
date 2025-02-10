@@ -37,11 +37,9 @@ header h1 {
 }
 
 main h1 {
-    background-color: #004080; /* Change this color as needed */
-    color: white; /* Ensures good contrast */
-    padding: 20px; /* Adds spacing around the text */
-    text-align: center;
-    border-radius: 10px; /* Optional: Adds rounded corners */
+    color: var(--text-on-dark); /* Changed to light text */
+    text-decoration: none;
+    font-weight: 400;
 }
 
 
