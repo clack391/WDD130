@@ -323,14 +323,20 @@ section.adventures h2 {
 
 /* Info Grid */
 .info-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: 20px;
     padding: 2rem;
 }
 
 .info-grid div {
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
 }
 
 .info-grid img {
