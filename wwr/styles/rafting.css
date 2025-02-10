@@ -36,6 +36,15 @@ header h1 {
     margin: 0;
 }
 
+main h1 {
+    background-color: #004080; /* Change this color as needed */
+    color: white; /* Ensures good contrast */
+    padding: 20px; /* Adds spacing around the text */
+    text-align: center;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+
 nav ul {
     display: flex;
     justify-content: flex-end;
