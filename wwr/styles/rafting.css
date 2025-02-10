@@ -326,7 +326,7 @@ section.adventures h2 {
     margin: 2rem;
 }
 
-.contact-cta .btn {
+.contact-cta button {
     background-color: #004080;
     color: white;
     padding: 10px 20px;
