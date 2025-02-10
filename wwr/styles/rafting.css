@@ -324,24 +324,26 @@ section.adventures h2 {
 .info-grid {    
     display: grid;    
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));    
-    gap: 40px; /* Increased gap for better spacing */    
+    gap: 40px; /* Keeps good spacing */    
     padding: 2rem;    
     text-align: center;    
     justify-items: center;  
 }  
 
 /* Ensure h2 stays at the top and spans across all columns */
-.grid-header {    
+.info-grid h2 {    
     grid-column: 1 / -1;    
     text-align: center;    
+    font-size: 2rem;    
+    margin-bottom: 1rem;
 }  
 
 .info-grid div {    
-    max-width: 500px;    
     display: flex;    
     flex-direction: column;    
     align-items: center;    
     text-align: center;    
+    justify-content: center;
 }  
 
 .info-grid img {    
@@ -349,7 +351,8 @@ section.adventures h2 {
     max-width: 400px;    
     height: auto;    
     border-radius: 5px;  
-}    
+}
+    
   
 
 
