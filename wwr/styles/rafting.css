@@ -37,10 +37,10 @@ header h1 {
 }
 
 main h1 {
-    grid-column: 1 / -1; /* Span all columns */
-    text-align: center;
-    color: var(--primary-color);
-    margin: 20px 0;
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+    color: var(--text-on-dark);
+    text-align: left;
 }
 
 
