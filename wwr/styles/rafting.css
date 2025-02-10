@@ -324,13 +324,13 @@ section.adventures h2 {
 .info-grid {    
     display: grid;    
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));    
-    gap: 20px;    
+    gap: 40px; /* Increased gap for better spacing */    
     padding: 2rem;    
     text-align: center;    
     justify-items: center;  
 }  
 
-/* Ensure h2 spans across all columns */
+/* Ensure h2 stays at the top and spans across all columns */
 .grid-header {    
     grid-column: 1 / -1;    
     text-align: center;    
@@ -349,7 +349,7 @@ section.adventures h2 {
     max-width: 400px;    
     height: auto;    
     border-radius: 5px;  
-}  
+}    
   
 
 
