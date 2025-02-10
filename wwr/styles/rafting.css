@@ -321,15 +321,6 @@ section.adventures h2 {
     border-radius: 5px;
 }
 
-.contact-cta .btn {
-    background-color: #004080;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
-}
-
 .info-grid {    
     display: grid;    
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));    
