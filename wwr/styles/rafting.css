@@ -330,8 +330,14 @@ section.adventures h2 {
     justify-items: center;  
 }  
 
+/* Ensure h2 spans across all columns */
+.grid-header {    
+    grid-column: 1 / -1;    
+    text-align: center;    
+}  
+
 .info-grid div {    
-    max-width: 500px; /* Adjust based on preference */    
+    max-width: 500px;    
     display: flex;    
     flex-direction: column;    
     align-items: center;    
@@ -344,6 +350,7 @@ section.adventures h2 {
     height: auto;    
     border-radius: 5px;  
 }  
+  
 
 
 /* Trip Gallery */
