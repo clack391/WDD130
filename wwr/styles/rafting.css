@@ -326,6 +326,16 @@ section.adventures h2 {
     margin: 2rem;
 }
 
+.cta-button {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
 .info-grid {    
     display: grid;    
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));    
