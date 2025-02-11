@@ -67,10 +67,10 @@ nav ul li a:hover {
 }
 
 .hero img {
+    display: block;
     width: 100%;
     height: auto;
 }
-
 
 .hero h1 {
     position: absolute;
@@ -381,40 +381,47 @@ section.adventures h2 {
 
 .trip-list {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures responsiveness */
     text-align: center;
+    gap: 20px; /* Adds spacing between trip items */
 }
 
 .trip {
-    flex: 1 1 300px;
-    margin: 20px;
+    flex: 1 1 300px; /* Ensures each trip takes up equal space */
+    max-width: 350px; /* Optional: Adjusts the maximum width */
 }
+
 
 .trip img {
     width: 100%;
+    max-width: 300px;
+    height: auto;
     border-radius: 5px;
 }
 
-
 /* Trips Table */
-.trip-table table {
+.trips-table {
+    margin: 2rem auto;
+    text-align: center;
+    width: 80%;
+}
+
+table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
 }
 
-.trip-table th, .trip-table td {
+th, td {
     border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
+    padding: 8px;
 }
 
-.trip-table th {
-    background-color: var(--primary-color);
-    color: var(--text-on-dark);
+th {
+    background-color: #004080;
+    color: white;
 }
-
 
 footer {
     display: flex;
