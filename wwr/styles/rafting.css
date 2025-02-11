@@ -6,7 +6,7 @@
     --background-color: #ffffff;
 }
 
-body {
+bbody {
     font-family: 'Kanit', sans-serif;
     color: var(--font-color);
     background-color: var(--background-color);
