@@ -6,7 +6,7 @@
     --background-color: #ffffff;
 }
 
-bbody {
+body {
     font-family: 'Kanit', sans-serif;
     color: var(--font-color);
     background-color: var(--background-color);
@@ -35,6 +35,7 @@ header h1 {
     text-align: center;
     margin: 0;
 }
+
 
 nav ul {
     display: flex;
