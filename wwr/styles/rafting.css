@@ -60,7 +60,7 @@ nav ul li a:hover {
 }
 
 .hero {
-    position: relative;
+    position: absolute;
     text-align: center;
     color: var(--secondary-color);
 }
